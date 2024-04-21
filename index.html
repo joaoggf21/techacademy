@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" href="assets/logo rodape02.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--codigo google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--fim do google fonts-->
+    <!--bootstrap icone-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--fim bootstrap icone-->
+    <link rel="stylesheet" href="styles/style.css">
+    <title>The Blue Ball Journey</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="">
+                    <img src="assets/logo rodape02.png" alt="Logo do Jogo">
+                </a>
+            </div><!---logo-->
+            <div class="menu-bar">
+                <a href="" title="Menu" class="menu" onclick="mostrar()" >
+                    <img src="assets/menu.png" alt="menu" title="Menu">
+                </a>
+            </div>
+            <nav> <!-- adicionar links menu -->
+                <ul>
+                    <li><a href="#section-inicio">INICIO</a></li>
+                    <li><a href="#section-especialidades">SOBRE</a></li>
+                    <li><a href="#section-sobre">GALERIA</a></li>
+                </ul>
+            </nav> <!-- adicionar links menu -->
+            <div class="btn-social-jogar">
+                <a href="#">
+                    <button id="btnJogar">Jogar</button>
+                </a>
+            </div>
+        </div><!--interface-->
+    </header>
+    <!--conteudo principal do site-->
+    <main class="container">
+        <section class="topo-do-site" id="section-inicio">
+            <div class="interface"> <!--elementos que farão parte do topo do site-->
+                <div class="flex">
+                    <div class="txt-topo-site"> <!--lado esquerdo do site, onde ficara os textos-->
+                        <h1>"Em Blue Ball Journey, cada objeto coletado é um passo rumo à grandeza"<span>.</span></h1>
+                        <p> <em>Explore a Blue Ball Journey, um jogo emocionante com desafios cativantes! Colete objetos
+                                em cada fase para avançar, enfrentando obstáculos. Descubra ambientes fascinantes e
+                                desbloqueie habilidades especiais. Com controles intuitivos, mergulhe em uma experiência
+                                única. Quantos objetos você conseguirá coletar? A aventura está só começando neste mundo
+                                visualmente deslumbrante!
+                        </p></em>
+                    </div><!--div-txt-topo-site-->
+                    <div class="img-topo-site"> <!--imagem flutuante-->
+                        <img src="assets/The Blue Ball Journey06.png" alt="Player Jogo">
+                    </div> <!--img-topo-site-imagem flutuante-->
+                </div> <!--flex-->
+            </div><!--div interface-->
+        </section><!--topo do site-->
+        <section id="section-especialidades" class="especialidades"> <!-- adicionando auto rolagem com id -->
+            <div class="interface-especialidades">
+                <h2 class="titulo">Colete Para <span>VENCER!</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-controller"></i>
+                        <h3>Player</h3>
+                        <p>O personagem é ágil e versátil, movendo-se com precisão pelo cenário. Suas habilidades
+                            incluem saltos, deslizes rápidos e técnicas especiais. Explore as fases e supere desafios ao
+                            dominar seus movimentos durante a jornada.</p>
+                    </div><!--especialidade-box-->
+                    <div class="especialidades-box">
+                        <i class="bi bi-image-alt"></i>
+                        <h3>Cenário</h3>
+                        <p>O cenário tem plataformas difíceis e áreas perigosas. Seja cauteloso ao se movimentar para
+                            evitar mortes. Planeje bem seus passos para sobreviver e progredir no jogo.</p>
+                    </div><!--especialidades-box-->
+                    <div class="especialidades-box">
+                        <i class="bi bi-award"></i>
+                        <h3>Triunfo</h3>
+                        <p>"No jogo, o caminho para a vitória é conquistado passo a passo, superando desafios e
+                            coletando conquistas ao longo da jornada."</p>
+                    </div><!--especialidades-box-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--especialidades-->
+        <section id="section-sobre" class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="assets/imagensgame4.png" alt="Imagens do jogo" />
+                    </div><!--img-sobre-->
+                    <div class="txt-sobre">
+                        <h2>Galeria de<span>Imagens.</span></h2>
+                        <P><i>Em The Blue Ball Journey, as missões são simples e diretas. Você controla<br> a bola azul em
+                                uma série de desafios de plataforma, coletando itens<br> e alcançando pontos de destino.
+                                Cada fase apresenta obstáculos, <br>mantendo o jogo cativante e divertido.
+                        </P></i>
+                        <p><i>Site produzido por conhecimentos encontrados em vídeo aulas e <br>pesquisas equivalentes a
+                                proporção do jogo. Todos os direitos reservados <br>a João Fernandes.
+                        </p></i>
+                    </div> <!--txt-sobre-->
+                </div><!--flex-->
+            </div>
+             <!--interface-->
+        </section>
+        <div class="btn-social-jogar-main">
+            <a href="#">
+                <button id="btnJogar2">Jogar</button>
+            </a>
+        </div>
+    </main>
+    <footer> <!--rodapé-->
+        <div class="interface">
+            <div class="line-footer">
+                <div class="btn-social"> <!--adicionando link aos botões-->
+                    <button><a href="https://www.instagram.com/joaog_gfernandes/" target="_blank"><i
+                                class="bi bi-instagram"></i></a></button>
+                    <button><a href="https://www.youtube.com/" target="_blank"><i
+                                class="bi bi-youtube"></i></a></button>
+                    <button><a href="https://wa.me/5544999208540?text=Fala+Comigo%21" target="_blank"><i
+                                class="bi bi-whatsapp"></i></a></button>
+                </div> <!--adicionando link aos botões-->
+            </div>
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-arrow-down"></i><a
+                        href="mailto:joaogabrielfernandes229@gmail.com">joaogabrielfernandes229@gmail.com</a></p>
+            </div>
+        </div>
+    </footer> <!-- fim do rodapé -->
+</body>
+<!--adcionando menu mobile-->
+<script>  
+    function mostrar() {
+        event.preventDefault();
+        document.querySelector("nav").classList.toggle("mostrar");
+        console.log("chamou");
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+    var btnJogar = document.getElementById("btnJogar");
+    btnJogar.addEventListener("click", function() {
+        window.location.href = "game/ProjetoTeste02/index.html"; // Substitua com o caminho correto para o jogo
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+    var btnJogar = document.getElementById("btnJogar2");
+    btnJogar.addEventListener("click", function() {
+        window.location.href = "game/ProjetoTeste02/index.html"; // Substitua com o caminho correto para o jogo
+    });
+});
+});
+</script>
+</html>
