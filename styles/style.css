@@ -1,0 +1,479 @@
+/* estilo geral */
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif
+}
+
+
+/* adicionando auto rolagem ao menu */
+html {
+    scroll-behavior: smooth;
+}
+
+/*cor defundo do site (degrade)*/
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, Goldenrod, midnightblue, black);
+    background-size: 500% 500%;
+    background-position: 0% 0%;
+    height: 100vh; /* altura */
+}
+
+.content {
+    max-width: 90px;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+}
+
+
+.interface-especialidades {
+    max-width: 1280px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.flex-especialidades {
+    display: flex;
+    align-items: center;
+}
+
+.interface {
+    max-width: 1280px;
+    /*largura maxima*/
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* estilizando o botão contato */
+.btn-contato button {
+    padding: 10px 40px;
+    /* espaçamento do botão */
+    font-size: 1.1rem;
+    /* tamando da fonte */
+    font-weight: 600;
+    /* peso da fonte */
+    background-color: darkorange;
+    /* cor do fundo do botão */
+    border: 0;
+    /* retira a borda do botão */
+    border-radius: 30px;
+    /* adiciona borda redonda */
+    cursor: pointer;
+    /* Torna o cursor uma mão ao passar nos links */
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: darkorange;
+}
+
+/* gerar efeito no botão contato*/
+button:hover {
+    box-shadow: 0px 0px 8px #dda9a9;  /* Distancia o menu da tela */
+   
+    transform: scale(1.05);
+}
+
+
+/* estilo de cabeçlho*/
+header {
+    padding: 10px 4%;  /* Distancia o menu da tela */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    opacity: 0.8;
+    background-color: #17186A;
+    box-shadow: 0 2px 8px #17186A;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+header a {
+    color: #FFFF;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+/*Adiciona detalhes ao passar cursor*/
+header a:hover {
+    color: darkorange;
+    transform: scale(1.05);
+    
+/* adiciona o zoom ao passar o cursor */
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/*topo do site, começa aqui*/
+section.topo-do-site {
+    padding: 40px 4%;
+    margin-top: 80px;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    /* espaçamento entre elementos */
+    margin-top: 120px;
+}
+
+.topo-do-site h1 {
+    /*editando texto */
+    color: #ffff;
+    font-size: 2.2rem;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    /* editando o ., tag span */
+    color: darkorange;
+    font-size: 4.375rem;
+    /* aumenta o tamanho */
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+}
+
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* estilo das especialidades */
+section.especialidades {
+    padding: 40px 4%;
+    height: 100vh;
+    margin-top: 70px;
+    align-content: center;
+}
+
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades .especialidades-box {
+    color: #fff;
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 45px;
+    transition: .2s;
+
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(255, 246, 246, 0.459)
+}
+
+.especialidades .especialidades-box i {
+    font-size: 4.375rem;
+    color: darkorange;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.flex-sobre {
+    display: flex;
+    gap: 225px;
+    align-items: center;
+}
+
+
+/* estilo do sobre */
+
+.sobre {
+    margin-bottom: 50px;
+    height: 100vh;
+    align-content: center;
+}
+
+
+script.sobre {
+    padding: 100px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 240px;
+    height: 85vh;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 2.5rem;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: darkorange;
+    display: block;
+
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/* estilo dos botões */
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px; /* borda do botão */
+    border: none;
+    background-color: darkorange;
+    font-size: 1.2rem; /* tamanho da fonte */
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.btn-social-jogar button {
+    width: 110px;
+    height: 45px;
+    border-radius: 30px; /* borda do botão */
+    border: none;
+    background-color: darkorange;
+    font-size: 1rem; /* tamanho da fonte */
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.btn-social-jogar-main button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 55px;
+    border-radius: 30px; /* borda do botão */
+    border: none;
+    background-color: darkorange;
+    font-size: 1rem; /* tamanho da fonte */
+    cursor: pointer;
+    margin: 0 auto;
+    transition: .2s;
+}
+
+.btn-social-jogar-main a {
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    float: right;
+}
+
+/* estilo rodape */
+
+footer {
+    padding: 60px 4%;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+    border-bottom: 2px solid midnightblue; 
+}
+
+.borda {
+    border-top: 2px solid midnightblue;
+}
+
+footer .line-footer p i {
+    color: midnightblue;
+    font-size: 1.2rem;
+}
+
+footer .line-footer p a {
+    color: darkblue;
+    text-decoration: none;
+    margin-left: 8px;
+    
+}
+
+.menu-bar{
+    display: none;
+}
+
+
+/*Iniciando responsividade em 1259px*/
+@media screen and (max-width: 1259px) {
+    /*Classes Gerais*/
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mostrar {
+        display: block;
+        align-items: center;
+    }
+
+    header {
+        padding: 5px 4%;
+    }
+
+    header nav{
+            display: none;
+        }
+
+    header nav ul{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        display: flex;
+        z-index: 1000;
+        flex-direction: column;
+        top: 100%;
+    }
+    
+    header nav ul li{
+        width: 100%;
+        text-align: center;
+        background-color: #17186A;
+        font-size: 1.2rem;
+        box-sizing: border-box;
+    }
+
+    .menu-bar{
+        display: block;
+        margin-left: auto;
+    }
+
+    header>.interface {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    .btn-contato {
+        border-radius: 30px; /* borda do botão */
+        border: none;
+        background-color: darkorange;
+        font-size: 1rem; /* tamanho da fonte */
+        cursor: pointer;
+        margin: 0 auto;
+        transition: .2s;
+    }
+
+    .btn-social-jogar button {
+        display: none;
+    }
+
+    .img-responsiva {
+        width: 365px;
+        height: 365px;
+    }
+
+    .flex {
+        flex-direction: column-reverse;
+    }
+
+    section.especialidades {
+        margin-top: 100px;
+        height: auto;
+    }
+
+    .especialidades .especialidades-box {
+        color: #fff;
+        padding: 40px;
+        margin-top: 25px;
+        border-radius: 45px;
+        transition: .2s;
+    }
+
+    section.topo-do-site {
+        margin-top: 50px;
+    }
+    
+    .sobre {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    section.sobre .flex {
+        align-items: center;
+        margin-top: 20%;
+        gap: 20px;
+        height: auto;
+        padding: 5%;
+    }
+
+    /*Cabeçalho*/
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(45deg, Goldenrod, midnightblue, black);
+        background-size: 700% 700%;
+        background-position: 0% 0%;
+    }
+
+}
+
+
+
